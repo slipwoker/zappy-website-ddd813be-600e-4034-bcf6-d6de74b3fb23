@@ -1,0 +1,736 @@
+<!DOCTYPE html><html lang="he" dir="rtl"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="גלה איך ללמוד ספרדית בקלות עם השיטה הייחודית של מאסטר אספניול - למידה ללא שינון, דגש על דיבור אמיתי, תהליך ברור ומסודר שמוביל לתוצאות תוך 60 יום.">
+  <meta name="keywords" content="איך ללמוד ספרדית בקלות, קורס ספרדית למתחילים, מאסטר אספניול, שיטת לימוד ספרדית">
+  <title>איך ללמוד ספרדית בקלות — מאסטר אספניול</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon-512x512.png">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<style>
+/* Zappy Attribution Header Styles */
+.zappy-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  box-shadow: 0px 4px 19px 0px rgba(0,0,0,0.04);
+  padding: 16px 10px;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  color: #4a4a4a;
+  line-height: 21px;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 21px;
+  direction: ltr !important;
+  unicode-bidi: isolate;
+}
+
+    .zappy-header p {
+      margin: 0;
+      padding: 0;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 21px;
+      white-space: nowrap;
+      display: inline-block;
+      vertical-align: baseline;
+      margin-bottom: 0 !important;
+      direction: ltr !important;
+    }
+
+.zappy-header .zappy-link {
+  font-weight: 700;
+  color: #4a4a4a;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.zappy-header .zappy-link:hover {
+  opacity: 0.7;
+}</style>
+    <!-- Cookie Consent -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.umd.js"></script>
+    <!-- Mickidum Accessibility Toolbar -->
+    <script src="https://cdn.jsdelivr.net/gh/mickidum/acc_toolbar/acctoolbar/acctoolbar.min.js"></script>
+<!-- Zappy Analytics -->
+<script>
+(function() {
+  'use strict';
+  
+  // Configuration
+  var config = {
+    websiteId: 'ddd813be-600e-4034-bcf6-d6de74b3fb23',
+    apiUrl: 'https://api.zappy5.com/api/analytics/track',
+    sessionDuration: 30 * 60 * 1000, // 30 minutes
+    visitorDuration: 30 * 24 * 60 * 60 * 1000, // 30 days
+    trackPageViews: true,
+    trackClicks: true,
+    trackFormSubmissions: true
+  };
+  
+  // Generate or retrieve persistent visitor ID (30 days)
+  function getVisitorId() {
+    var visitorKey = 'zappy_visitor_' + config.websiteId;
+    var visitor = null;
+    
+    try {
+      visitor = localStorage.getItem(visitorKey);
+      if (visitor) {
+        var visitorData = JSON.parse(visitor);
+        var now = Date.now();
+        
+        // Check if visitor ID is still valid (30 days)
+        if (now - visitorData.created < config.visitorDuration) {
+          // Update last seen timestamp
+          visitorData.lastSeen = now;
+          localStorage.setItem(visitorKey, JSON.stringify(visitorData));
+          return visitorData.id;
+        }
+      }
+    } catch (e) {
+      console.warn('Zappy Analytics: LocalStorage not available');
+    }
+    
+    // Generate new visitor ID
+    var newVisitorId = 'zv_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+    
+    try {
+      localStorage.setItem(visitorKey, JSON.stringify({
+        id: newVisitorId,
+        created: Date.now(),
+        lastSeen: Date.now()
+      }));
+    } catch (e) {
+      // Continue without local storage
+    }
+    
+    return newVisitorId;
+  }
+  
+  // Generate or retrieve session ID (30 minutes)
+  function getSessionId() {
+    var sessionKey = 'zappy_session_' + config.websiteId;
+    var session = null;
+    
+    try {
+      session = sessionStorage.getItem(sessionKey);
+      if (session) {
+        var sessionData = JSON.parse(session);
+        var now = Date.now();
+        
+        // Check if session is still valid
+        if (now - sessionData.timestamp < config.sessionDuration) {
+          // Update timestamp
+          sessionData.timestamp = now;
+          sessionStorage.setItem(sessionKey, JSON.stringify(sessionData));
+          return sessionData.id;
+        }
+      }
+    } catch (e) {
+      console.warn('Zappy Analytics: SessionStorage not available');
+    }
+    
+    // Generate new session ID
+    var newSessionId = 'zs_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+    
+    try {
+      sessionStorage.setItem(sessionKey, JSON.stringify({
+        id: newSessionId,
+        timestamp: Date.now()
+      }));
+    } catch (e) {
+      // Continue without session storage
+    }
+    
+    return newSessionId;
+  }
+  
+  var visitorId = getVisitorId();
+  var sessionId = getSessionId();
+  
+  // Track an event
+  function trackEvent(eventType, data) {
+    data = data || {};
+    
+    var eventData = {
+      website_id: config.websiteId,
+      event_type: eventType,
+      page_path: window.location.pathname,
+      referrer: document.referrer || 'direct',
+      visitor_id: visitorId,
+      session_id: sessionId,
+      metadata: data
+    };
+    
+    // Use sendBeacon if available (better for page unload events)
+    if (navigator.sendBeacon) {
+      var blob = new Blob([JSON.stringify(eventData)], { type: 'application/json' });
+      navigator.sendBeacon(config.apiUrl, blob);
+    } else {
+      // Fallback to fetch
+      fetch(config.apiUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(eventData),
+        keepalive: true
+      }).catch(function(error) {
+        console.warn('Zappy Analytics: Failed to track event', error);
+      });
+    }
+  }
+  
+  // Track page view
+  if (config.trackPageViews) {
+    trackEvent('pageview', {
+      title: document.title,
+      url: window.location.href
+    });
+  }
+  
+  // Track clicks on important elements
+  if (config.trackClicks) {
+    document.addEventListener('click', function(e) {
+      var target = e.target;
+      
+      // Track button clicks (counted as actions)
+      if (target.tagName === 'BUTTON' || target.closest('button')) {
+        var button = target.tagName === 'BUTTON' ? target : target.closest('button');
+        trackEvent('click', {
+          element: 'button',
+          text: button.textContent.trim().substring(0, 100),
+          id: button.id || null,
+          class: button.className || null
+        });
+      }
+      
+      // Track link clicks (navigation - not counted as actions)
+      else if (target.tagName === 'A' || target.closest('a')) {
+        var link = target.tagName === 'A' ? target : target.closest('a');
+        trackEvent('navigation', {
+          element: 'link',
+          text: link.textContent.trim().substring(0, 100),
+          href: link.href,
+          external: link.hostname !== window.location.hostname
+        });
+      }
+    }, true);
+  }
+  
+  // Track form submissions
+  if (config.trackFormSubmissions) {
+    document.addEventListener('submit', function(e) {
+      var form = e.target;
+      
+      trackEvent('form_submit', {
+        form_id: form.id || null,
+        form_name: form.name || null,
+        form_action: form.action || null,
+        form_method: form.method || 'GET'
+      });
+    }, true);
+  }
+  
+  // Track time on page (send on page unload)
+  var pageLoadTime = Date.now();
+  
+  window.addEventListener('beforeunload', function() {
+    var timeOnPage = Math.floor((Date.now() - pageLoadTime) / 1000); // in seconds
+    
+    trackEvent('page_unload', {
+      time_on_page: timeOnPage,
+      page_path: window.location.pathname
+    });
+  });
+  
+  // Expose tracking function globally for custom events
+  window.zappyAnalytics = {
+    track: trackEvent,
+    getVisitorId: function() { return visitorId; },
+    getSessionId: function() { return sessionId; }
+  };
+  
+})();
+</script>
+<!-- End Zappy Analytics -->
+
+    <style id="zappy-mobile-submenu-styles">
+      /* Mobile submenu accordion styles */
+      @media (max-width: 768px) {
+        .nav-menu .sub-menu, nav .sub-menu, .navbar .sub-menu, #navMenu .sub-menu {
+          position: static !important;
+          transform: none !important;
+          box-shadow: none !important;
+          background: transparent !important;
+          margin-top: 0 !important;
+          max-height: 0;
+          overflow: hidden;
+          opacity: 0;
+          visibility: hidden;
+          transition: max-height 0.3s ease, opacity 0.3s ease, visibility 0.3s ease, padding 0.3s ease;
+          padding: 0 !important;
+          border-radius: 0 !important;
+        }
+        .sub-menu.mobile-expanded {
+          max-height: 500px !important;
+          opacity: 1 !important;
+          visibility: visible !important;
+          padding: 8px 0 8px 16px !important;
+        }
+        [dir="rtl"] .sub-menu.mobile-expanded, html[lang="he"] .sub-menu.mobile-expanded, html[lang="ar"] .sub-menu.mobile-expanded {
+          padding: 8px 16px 8px 0 !important;
+        }
+        .nav-menu li:hover > .sub-menu, nav li:hover > .sub-menu, .navbar li:hover > .sub-menu, #navMenu li:hover > .sub-menu {
+          opacity: 0; visibility: hidden; pointer-events: none;
+        }
+        .nav-menu li > .sub-menu.mobile-expanded, nav li > .sub-menu.mobile-expanded, .navbar li > .sub-menu.mobile-expanded, #navMenu li > .sub-menu.mobile-expanded {
+          opacity: 1 !important; visibility: visible !important; pointer-events: auto !important;
+        }
+        .nav-menu li:has(.sub-menu), nav li:has(.sub-menu), .navbar li:has(.sub-menu), #navMenu li:has(.sub-menu) {
+          display: flex !important; flex-wrap: wrap !important; align-items: center !important;
+        }
+        .nav-menu li:has(.sub-menu) > a, nav li:has(.sub-menu) > a, .navbar li:has(.sub-menu) > a, #navMenu li:has(.sub-menu) > a {
+          flex: 1 !important;
+        }
+        .mobile-submenu-toggle {
+          display: flex !important; align-items: center !important; justify-content: center !important;
+          width: 44px !important; height: 44px !important; background: transparent !important;
+          border: none !important; cursor: pointer !important; padding: 0 !important; margin: 0 !important;
+          flex-shrink: 0 !important; -webkit-tap-highlight-color: transparent;
+        }
+        .mobile-submenu-toggle::after {
+          content: '' !important; display: block !important; width: 0 !important; height: 0 !important;
+          border-left: 6px solid transparent !important; border-right: 6px solid transparent !important;
+          border-top: 7px solid currentColor !important; transition: transform 0.3s ease !important;
+        }
+        .mobile-submenu-toggle.expanded::after { transform: rotate(180deg) !important; }
+        .nav-menu li:has(.sub-menu) > .sub-menu, nav li:has(.sub-menu) > .sub-menu, .navbar li:has(.sub-menu) > .sub-menu, #navMenu li:has(.sub-menu) > .sub-menu {
+          flex-basis: 100% !important; width: 100% !important;
+        }
+        .sub-menu a { padding: 10px 0 !important; display: block !important; font-size: 14px !important; }
+        .sub-menu a:hover { background-color: transparent !important; }
+      }
+      @media (min-width: 769px) { .mobile-submenu-toggle { display: none !important; } }
+    </style>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<!-- Zappy Attribution Header -->
+<div id="zappy-attribution-header" class="zappy-header" style="display: none;">
+  <p>Happily created by&nbsp;<a href="https://zappy5.com" target="_blank" rel="noopener noreferrer" class="zappy-link">Zappy</a></p>
+</div>
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <div class="nav-brand">
+        <a href="/" class="logo-link">
+          <img src="/assets/logo.webp" alt="מאסטר אספניול" class="logo" />
+        </a>
+      </div>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="תפריט">
+        <svg class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+        </svg>
+        <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" style="display: none;">
+          <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+        </svg>
+      </button>
+      <button class="phone-header-btn" aria-label="התקשרו אלינו">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+        </svg>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="/courses">הקורסים שלנו</a></li>
+        <li><a href="/method" class="active">השיטה</a></li>
+        <li><a href="/about">אודות</a></li>
+      </ul>
+      <div class="nav-cta-container">
+        <li class="nav-cta-item"><a href="/contact" class="nav-cta-btn">צור קשר</a></li>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>איך ללמוד ספרדית בקלות - השיטה של מאסטר אספניול</h1>
+      <h3>גלה את שיטת הלימוד הייחודית שמובילה אלפי תלמידים לדיבור בביטחון תוך 60 יום - ללא שינון, ללא לחץ</h3>
+    </div>
+  </section>
+
+  <section class="method-intro">
+    <div class="container">
+      <div class="method-intro-content">
+        <p>רוב האנשים חושבים שללמוד שפה זה עניין של שינון מילים וכללי דקדוק. הם מנסים אפליקציות, קורסים מסורתיים, ומתוך כך מרגישים שהם לא מתקדמים. אחרי חודשים של לימוד, הם עדיין לא מסוגלים לנהל שיחה פשוטה בספרדית.</p>
+        <p>השיטה של מאסטר אספניול שונה לחלוטין. אנחנו לא מלמדים אתכם לשנן - אנחנו מלמדים אתכם לדבר. זו שיטה שמבוססת על איך המוח באמת לומד שפות, ולא על מה שמקובל בספרי לימוד.</p>
+        <p>במשך למעלה מעשור, אנחנו מלמדים ספרדית בדרך אחרת. השיטה שלנו הוכיחה את עצמה עם אלפי תלמידים שהגיעו לדיבור אמיתי תוך זמן קצר. זה קורס ספרדית למתחילים שבנוי אחרת מכל מה שהכרתם.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="principles-section">
+    <div class="container">
+      <h2>העקרונות המרכזיים של השיטה</h2>
+      <div class="principles-grid">
+        <div class="principle-card">
+          <div class="principle-icon">
+            <i class="fas fa-comments"></i>
+          </div>
+          <h3>דיבור מהיום הראשון</h3>
+          <p>לא מתחילים עם דקדוק או שינון מילים. כבר בשיעור הראשון תלמדו לומר משפטים שלמים ולהבין איך השפה עובדת באמת. הדיבור הוא המטרה, לא תוצר לוואי של הלימוד.</p>
+        </div>
+        <div class="principle-card">
+          <div class="principle-icon">
+            <i class="fas fa-brain"></i>
+          </div>
+          <h3>הבנה במקום שינון</h3>
+          <p>המוח שלנו לא אוהב לשנן. הוא אוהב להבין. השיטה שלנו מלמדת אתכם להבין את המבנה של השפה, לא לשנן רשימות מילים. ככה הידע נשאר לטווח ארוך.</p>
+        </div>
+        <div class="principle-card">
+          <div class="principle-icon">
+            <i class="fas fa-route"></i>
+          </div>
+          <h3>תהליך ברור ומסודר</h3>
+          <p>כל שיעור בנוי בצורה לוגית ומתקדם צעד אחר צעד. אין קפיצות, אין חורים בידע. אתם תמיד יודעים איפה אתם ולאן אתם הולכים.</p>
+        </div>
+        <div class="principle-card">
+          <div class="principle-icon">
+            <i class="fas fa-user-check"></i>
+          </div>
+          <h3>התאמה אישית</h3>
+          <p>כל אחד לומד בקצב שלו. אין לחץ, אין מרוץ. אפשר לחזור על שיעורים, לתרגל כמה שצריך, ולהתקדם בקצב שנוח לכם.</p>
+        </div>
+        <div class="principle-card">
+          <div class="principle-icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <h3>יעילות מקסימלית</h3>
+          <p>שיעורים קצרים של 10-15 דקות שמתמקדים בדברים החשובים באמת. לא מבזבזים זמן על דברים שלא צריך. מתאים לאנשים עסוקים שרוצים ללמוד ספרדית בקלות.</p>
+        </div>
+        <div class="principle-card">
+          <div class="principle-icon">
+            <i class="fas fa-sync-alt"></i>
+          </div>
+          <h3>חזרה חכמה</h3>
+          <p>לא עושים חזרות משעממות. כל חזרה היא בהקשר חדש, עם תרגיל אחר. ככה הידע מתחזק באופן טבעי בלי שזה מרגיש כמו לימוד.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="process-section">
+    <div class="container">
+      <h2>התהליך: איך זה עובד בפועל?</h2>
+      <div class="process-timeline">
+        <div class="process-step">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h3>שלב הבסיס (ימים 1-15)</h3>
+            <p>נתחיל עם המבנים הבסיסיים של השפה. תלמדו לומר משפטים פשוטים, להציג את עצמכם, לשאול שאלות בסיסיות. הכל דרך דיבור, לא דרך שינון. זה השלב שבו מבינים איך השפה עובדת.</p>
+            <img data-placeholder="service-10" data-context="Spanish learning foundation stage, basic sentence structures visualization, beginner speaking confidently simple phrases, colorful educational graphics" src="/assets/service-service-10.webp" alt="שלב הבסיס בלימוד ספרדית" class="process-img">
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h3>בניית ביטחון (ימים 16-30)</h3>
+            <p>עכשיו מתחילים להרחיב. תלמדו לדבר על נושאים יומיומיים - משפחה, עבודה, תחביבים. נתרגל שיחות אמיתיות ונבנה את הביטחון שלכם בדיבור. זה השלב שבו מתחילים להרגיש שהשפה נהיית טבעית.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h3>התקדמות מואצת (ימים 31-45)</h3>
+            <p>הידע מתחיל להתחבר. תלמדו לדבר על העבר והעתיד, לבטא דעות, להסביר דברים מורכבים יותר. השיחות נהיות עשירות יותר והביטחון גדל. זה השלב שבו מרגישים שבאמת מדברים ספרדית.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="step-number">4</div>
+          <div class="step-content">
+            <h3>שליטה ושטף (ימים 46-60)</h3>
+            <p>בשלב הזה תדברו ספרדית בביטחון מלא. תוכלו לנהל שיחות על כל נושא יומיומי, להבין ספרדית מדוברת במהירות רגילה, ולהרגיש בנוח בכל סיטואציה. זה השלב שבו מבינים שהשיטה באמת עבדה.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="comparison-section">
+    <div class="container">
+      <h2>השיטה שלנו לעומת שיטות אחרות</h2>
+      <div class="comparison-content">
+        <div class="comparison-column">
+          <h3 class="comparison-title negative">שיטות מסורתיות</h3>
+          <ul class="comparison-list">
+            <li><i class="fas fa-times"></i> מתחילים עם דקדוק ושינון</li>
+            <li><i class="fas fa-times"></i> דיבור רק אחרי חודשים של לימוד</li>
+            <li><i class="fas fa-times"></i> רשימות מילים לשינון</li>
+            <li><i class="fas fa-times"></i> תרגילים משעממים וחוזרים</li>
+            <li><i class="fas fa-times"></i> לא ברור איך להתקדם</li>
+            <li><i class="fas fa-times"></i> מתמקדים בקריאה וכתיבה</li>
+            <li><i class="fas fa-times"></i> לוקח שנים להגיע לדיבור</li>
+          </ul>
+        </div>
+        <div class="comparison-column">
+          <h3 class="comparison-title positive">השיטה של מאסטר אספניול</h3>
+          <ul class="comparison-list">
+            <li><i class="fas fa-check"></i> דיבור מהיום הראשון</li>
+            <li><i class="fas fa-check"></i> הבנה במקום שינון</li>
+            <li><i class="fas fa-check"></i> למידה דרך הקשר ושיחות</li>
+            <li><i class="fas fa-check"></i> תרגילים מגוונים ומעניינים</li>
+            <li><i class="fas fa-check"></i> תהליך ברור ומסודר</li>
+            <li><i class="fas fa-check"></i> דגש על דיבור ושיחה</li>
+            <li><i class="fas fa-check"></i> תוצאות תוך 60 יום</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="science-section">
+    <div class="container">
+      <h2>המדע מאחורי השיטה</h2>
+      <div class="science-content">
+        <div class="science-text">
+          <p>השיטה של מאסטר אספניול מבוססת על מחקרים מודרניים בתחום לימוד שפות. מחקרים מראים שהמוח לומד שפות בצורה הכי טובה כשהלימוד מתמקד בתקשורת אמיתית ובהבנה, לא בשינון מכני.</p>
+          <p>העקרון המרכזי נקרא "למידה מובנית תקשורתית" - זה אומר שלומדים את השפה דרך שימוש בה לתקשורת אמיתית, עם מבנה ברור שמוביל את התלמיד צעד אחר צעד. זו הדרך שבה ילדים לומדים את שפת האם שלהם, וזו הדרך הכי יעילה ללמוד שפה שנייה.</p>
+          <h3>למה זה עובד?</h3>
+          <ul class="science-list">
+            <li><strong>הקשר ומשמעות:</strong> המוח זוכר טוב יותר מידע שיש לו הקשר ומשמעות. כשלומדים דרך שיחות אמיתיות, המידע נשאר.</li>
+            <li><strong>חזרה מרווחת:</strong> השיטה משלבת חזרות בצורה חכמה, בהקשרים שונים, מה שמחזק את הזיכרון לטווח ארוך.</li>
+            <li><strong>למידה פעילה:</strong> במקום לצפות בשיעורים באופן פסיבי, אתם מדברים ומתרגלים באופן פעיל - זה מה שגורם ללמידה אמיתית.</li>
+            <li><strong>הדרגתיות:</strong> התוכנית בנויה בצורה הדרגתית שמתאימה לאופן שבו המוח בונה ידע חדש - מהפשוט למורכב.</li>
+          </ul>
+          <p>זו לא סתם שיטה שהומצאה בלי בסיס - זו שיטה שמבוססת על מחקר, ניסיון של שנים, ותוצאות מוכחות של אלפי תלמידים. זה קורס ספרדית למתחילים שבנוי על מדע, לא על אמונות טפלות.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="results-section">
+    <div class="container">
+      <h2>התוצאות: מה תדעו לעשות אחרי 60 יום?</h2>
+      <div class="results-grid">
+        <div class="result-card">
+          <i class="fas fa-comments"></i>
+          <h3>שיחות יומיומיות</h3>
+          <p>תוכלו לנהל שיחות על נושאים יומיומיים - משפחה, עבודה, תחביבים, תוכניות לעתיד.</p>
+        </div>
+        <div class="result-card">
+          <i class="fas fa-utensils"></i>
+          <h3>מסעדות וחנויות</h3>
+          <p>תדעו להזמין במסעדה, לקנות בחנויות, ולהתמודד עם סיטואציות מעשיות.</p>
+        </div>
+        <div class="result-card">
+          <i class="fas fa-ear-listen"></i>
+          <h3>הבנה שמיעתית</h3>
+          <p>תבינו ספרדית מדוברת במהירות רגילה, לא רק כשמדברים לכם לאט.</p>
+        </div>
+        <div class="result-card">
+          <i class="fas fa-user-friends"></i>
+          <h3>שיחות עם מקומיים</h3>
+          <p>תרגישו בנוח לדבר עם דוברי ספרדית, לשאול שאלות, ולהבין תשובות.</p>
+        </div>
+        <div class="result-card">
+          <i class="fas fa-book-open"></i>
+          <h3>קריאה בסיסית</h3>
+          <p>תוכלו לקרוא טקסטים פשוטים, תפריטים, שלטים, ולהבין את המסר העיקרי.</p>
+        </div>
+        <div class="result-card">
+          <i class="fas fa-smile-beam"></i>
+          <h3>ביטחון עצמי</h3>
+          <p>והכי חשוב - תרגישו בטוחים בעצמכם כשאתם מדברים ספרדית, ללא פחד או מבוכה.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials-method">
+    <div class="container">
+      <h2>מה אומרים התלמידים על השיטה?</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <p class="testimonial-text">״ניסיתי שלוש אפליקציות שונות ללמוד ספרדית ולא הצלחתי להגיע לדיבור אמיתי. השיטה של מאסטר אספניול שונה לחלוטין - כבר אחרי שבועיים דיברתי משפטים שלמים. עכשיו אני מרגיש בטוח לנהל שיחות.״</p>
+          <div class="testimonial-author">
+            <strong>יוסי מזרחי</strong>
+            <span>גיל 45, רמת גן</span>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-text">״מה שהכי אהבתי זה שהכל הגיוני וברור. אין שינון מיותר, הכל נלמד בהקשר. אריק מסביר בצורה שמבינים בדיוק למה דברים עובדים ככה. זה באמת איך ללמוד ספרדית בקלות.״</p>
+          <div class="testimonial-author">
+            <strong>שירה כהן</strong>
+            <span>גיל 32, תל אביב</span>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-text">״השיטה פשוט עובדת. אחרי חודשיים הייתי בברצלונה ודיברתי עם מקומיים בביטחון מלא. הם הופתעו שלמדתי רק 60 יום. זה הקורס ספרדית למתחילים הכי יעיל שיש.״</p>
+          <div class="testimonial-author">
+            <strong>אורי לוי</strong>
+            <span>גיל 38, חיפה</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>מוכנים לנסות את השיטה בעצמכם?</h2>
+        <p>הצטרפו לאלפי תלמידים שכבר גילו איך ללמוד ספרדית בקלות. השיטה של מאסטר אספניול תוכיח לכם שאפשר ללמוד שפה בצורה אחרת - ללא שינון, עם דגש על דיבור, ותוצאות תוך 60 יום.</p>
+        <div class="cta-buttons">
+          <a href="/courses" class="btn-primary">בחר את הקורס שלך</a>
+          <a href="/contact" class="btn-secondary">צור קשר לפרטים</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <a href="https://wa.me/[whatsapp_handle]" target="_blank" class="whatsapp-float" aria-label="WhatsApp" rel="noopener noreferrer">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  
+    <!-- Legal Footer -->
+    <footer class="legal-footer">
+      <div class="container">
+        <div class="footer-main">
+          <div class="all-rights-reserved">
+            <p>© 2025 מאסטר אספניול. כל הזכויות שמורות.</p>
+          </div>
+          <div class="footer-social"><a href="https://facebook.com/[facebook_handle]" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+<a href="https://instagram.com/[instagram_handle]" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+<a href="https://wa.me/[whatsapp_handle]" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></div>
+          <div class="footer-legal">
+            <a href="/privacy" aria-label="מדיניות פרטיות">
+              מדיניות פרטיות
+            </a>
+            <span class="separator">|</span>
+            <a href="/accessibility" aria-label="נגישות">
+              נגישות
+            </a>
+            <span class="separator">|</span>
+            <a href="/terms" aria-label="תנאי שימוש">
+              תנאי שימוש
+            </a>
+          </div>
+        </div>
+        <div class="zappy-attribution">
+          <p>נוצר באמצעות&nbsp;<a href="https://zappy5.com" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">Zappy</a></p>
+        </div>
+      </div>
+    </footer>
+
+
+<!-- Zappy Attribution Header Script -->
+<script>
+(function() {
+  var websiteId = 'ddd813be-600e-4034-bcf6-d6de74b3fb23';
+  
+  // Don't show header in preview mode
+  var currentUrl = window.location.href;
+  var isPreview = currentUrl.includes('/preview/') || 
+                  currentUrl.includes('/preview-fullscreen/') || 
+                  currentUrl.includes('localhost:5001') ||
+                  currentUrl.includes('localhost:3000');
+  
+  if (isPreview) {
+    return; // Exit early in preview mode
+  }
+  
+  fetch('https://api.zappy5.com/api/website/' + websiteId + '/tier')
+    .then(function(response) { return response.json(); })
+    .then(function(data) {
+      if (data.showAttribution) {
+        var header = document.getElementById('zappy-attribution-header');
+        if (header) {
+          // Use dynamic announcement content if available
+          if (data.announcement && data.announcement.html) {
+            header.innerHTML = data.announcement.html;
+          }
+          // Apply fixed positioning styles inline (works for existing sites too)
+          header.style.cssText = 'position: fixed !important; top: 0 !important; left: 0 !important; right: 0 !important; width: 100% !important; z-index: 99999 !important; display: flex !important; justify-content: center !important; align-items: center !important; text-align: center !important; box-sizing: border-box !important;';
+          // Fix child elements that might have position: fixed from old CSS
+          var children = header.querySelectorAll('*');
+          for (var i = 0; i < children.length; i++) {
+            children[i].style.position = 'static';
+          }
+          // Get header height
+          var headerHeight = header.offsetHeight;
+          // Find and fix navbar to be fixed as well (prevents gap at top of page)
+          var navSelectors = ['nav', '.navbar', '.nav'];
+          var navbar = null;
+          for (var j = 0; j < navSelectors.length; j++) {
+            navbar = document.querySelector(navSelectors[j]);
+            if (navbar && navbar.id !== 'zappy-attribution-header') break;
+            navbar = null;
+          }
+          if (navbar) {
+            var navbarHeight = navbar.offsetHeight;
+            navbar.style.cssText += '; position: fixed !important; top: ' + headerHeight + 'px !important; left: 0 !important; right: 0 !important; width: 100% !important; z-index: 99998 !important;';
+            document.body.style.paddingTop = (headerHeight + navbarHeight) + 'px';
+          } else {
+            document.body.style.paddingTop = headerHeight + 'px';
+          }
+        }
+      }
+    })
+    .catch(function(error) {
+      console.error('Failed to check tier:', error);
+    });
+})();
+</script>
+    <div data-integration="accessibility:toolbar"></div>
+
+    <script id="zappy-mobile-submenu-script">
+    (function() {
+      function initMobileSubmenuToggles() {
+        if (window.innerWidth > 768) {
+          document.querySelectorAll('.mobile-submenu-toggle').forEach(function(btn) { btn.remove(); });
+          document.querySelectorAll('.sub-menu.mobile-expanded').forEach(function(menu) { menu.classList.remove('mobile-expanded'); });
+          return;
+        }
+        var items = document.querySelectorAll('.nav-menu li:has(.sub-menu), nav li:has(.sub-menu), .navbar li:has(.sub-menu), #navMenu li:has(.sub-menu)');
+        items.forEach(function(li) {
+          if (li.querySelector('.mobile-submenu-toggle')) return;
+          var submenu = li.querySelector('.sub-menu');
+          var parentLink = li.querySelector(':scope > a');
+          if (!submenu || !parentLink) return;
+          var toggleBtn = document.createElement('button');
+          toggleBtn.className = 'mobile-submenu-toggle';
+          toggleBtn.setAttribute('aria-label', 'Toggle submenu');
+          toggleBtn.setAttribute('type', 'button');
+          parentLink.insertAdjacentElement('afterend', toggleBtn);
+          toggleBtn.addEventListener('click', function(e) {
+            e.preventDefault(); e.stopPropagation();
+            document.querySelectorAll('.sub-menu.mobile-expanded').forEach(function(menu) {
+              if (menu !== submenu) { menu.classList.remove('mobile-expanded'); var t = menu.parentElement.querySelector('.mobile-submenu-toggle'); if(t) t.classList.remove('expanded'); }
+            });
+            submenu.classList.toggle('mobile-expanded');
+            toggleBtn.classList.toggle('expanded');
+          });
+        });
+      }
+      if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', initMobileSubmenuToggles); }
+      else { initMobileSubmenuToggles(); }
+      var resizeTimer; window.addEventListener('resize', function() { clearTimeout(resizeTimer); resizeTimer = setTimeout(initMobileSubmenuToggles, 250); });
+    })();
+    </script>
+    <script src="/script.js"></script>
+</body></html>
